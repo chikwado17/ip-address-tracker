@@ -19,7 +19,7 @@ h1 {
 }
 
 .header_bg {
-  background-image: url("./pattern-bg.png");
+  background-image: url("../pattern-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 380px;
@@ -72,7 +72,7 @@ h1 {
     font-size: 14px;
   }
   .header_bg {
-    background-image: url("./pattern-bg-mobile.png");
+    background-image: url("../pattern-bg-mobile.png");
     height: 480px;
   }
 
