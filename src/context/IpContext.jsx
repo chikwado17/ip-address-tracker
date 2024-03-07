@@ -1,9 +1,6 @@
 import { useState, useContext } from "react";
 import { createContext } from "react";
 
-const GEO_API =
-  "https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_r2ZLRWuorO8ZWvabqeEXRWT4ZtNHU";
-
 const IpContext = createContext();
 
 const IpContextProvider = ({ children }) => {
@@ -13,7 +10,9 @@ const IpContextProvider = ({ children }) => {
   const fetchIpAddress = async (ip) => {
     try {
       setIsLoading(true);
-      const res = await fetch(`${GEO_API}&ipAddress=${ip}`);
+      const res = await fetch(
+        `https://geo.ipify.org/api/v2/country,city?apiKey=at_BQNBZv2s6rFfrnlM7YpD0TG5IvtdC&ipAddress=${ip}`
+      );
       const data = await res.json();
       setIpAddress(data);
     } catch (err) {
