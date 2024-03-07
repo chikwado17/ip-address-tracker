@@ -1,0 +1,88 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden;
+  position: relative;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.header_bg {
+  background-image: url("./pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 380px;
+}
+
+.header_style {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.header_style h1 {
+  color: #fff;
+
+  margin-bottom: 30px;
+}
+
+.map-details {
+  position: absolute;
+  z-index: 1000;
+  top: 25%;
+  left: 20%;
+}
+
+.map-card {
+  padding: 10px 30px !important;
+  border-radius: 13px !important;
+}
+
+.map-details h5 {
+  color: hsl(0, 0%, 59%) !important;
+}
+
+.map-details h1 {
+  font-size: 30px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.map_container {
+  margin-top: -89px !important;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .header_bg {
+    background-image: url("./pattern-bg-mobile.png");
+    height: 480px;
+  }
+
+  .map-card {
+    text-align: center;
+  }
+
+  .map-details {
+    top: 28%;
+    left: 0%;
+  }
+}
